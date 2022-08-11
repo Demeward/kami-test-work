@@ -1,0 +1,66 @@
+// Colors
+// ---------------------------------
+
+// Default
+
+$color-default-black:               #000000;
+$color-default-black-50:            rgba(0, 0, 0, 0.5);
+$color-default-black-20:            rgba(0, 0, 0, 0.2);
+$color-default-white:               #ffffff;
+$color-default-white-75:            rgba(255, 255, 255, 0.75);
+$color-default-white-50:            rgba(255, 255, 255, 0.5);
+$color-transparent:                 rgba(255, 255, 255, 0);
+$color-school-bus-yellow:           #ffda00;
+$color-paris-daisy:                 #ffe54a;
+$color-tangerine-yellow:            #ffc700;
+$color-turbo:                       #fbda1b;
+$color-whisper:                     #e5e5e5;
+$color-whisper-light:               #eeeeee;
+$color-gainsboro:                   #dbdbdb;
+$color-grey:                        #808080;
+$color-nobel:                       #a1a1a1;
+$color-nero:                        #272727;
+$color-crimson:                     #e4002b;
+
+// Gradient
+
+$black-to-right:                    linear-gradient(90deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0) 75%);
+
+// Typography
+// ---------------------------------
+
+$fz-default:                        16px;
+$ff-roboto:                         "Roboto", "Arial", sans-serif;
+
+// Animation
+// ---------------------------------
+
+$tf-default:                        ease;
+$trans-default:                     0.5s $tf-default;
+$trans-modal:                       0.6s cubic-bezier(0.55, 0, 0.1, 1);
+$trans-200:                         0.2s $tf-default;
+$trans-600:                         0.6s $tf-default;
+$trans-600-smooth:                  0.6s cubic-bezier(0.78, 0.37, 0.94, 0.58);
+$trans-1000:                        1s $tf-default;
+$trans-1000-smooth:                 1s cubic-bezier(0.78, 0.37, 0.94, 0.58);
+
+// Viewports
+// ---------------------------------
+
+$vp-768:                            768px;
+$vp-1024:                           1024px;
+$vp-1280:                           1280px;
+$vp-1440:                           1440px;
+$vp-1920:                           1920px;
+
+// Viewport height
+
+$vh-700:                            700px;
+$vh-800:                            800px;
+$vh-900:                            900px;
+
+// Retina
+// ---------------------------------
+
+$retina-dpi:                        144dpi;
+$retina-dppx:                       1.5dppx;

@@ -1,0 +1,69 @@
+.input {
+  width: 100%;
+
+  & input {
+    width: 100%;
+    font-weight: 500;
+    line-height: size(21px);
+    padding: size(15px) size(10px) size(12px) size(19px);
+    border-radius: size(2px);
+    border: 1px solid $color-nobel;
+    transition: border-color $trans-default;
+    outline: none;
+
+    @include has-hover {
+      border-color: $color-nero;
+    }
+
+    &:invalid {
+      border-color: $color-crimson;
+
+      &::placeholder {
+        color: $color-crimson;
+      }
+    }
+  }
+}
+
+.textarea {
+  display: flex;
+  position: relative;
+  width: 100%;
+  border: 1px solid $color-nobel;
+  border-radius: size(2px);
+  transition: border-color $trans-default;
+
+  @include has-hover {
+    border-color: $color-nero;
+  }
+
+  & textarea {
+    width: 100%;
+    min-height: size(131px);
+    font-weight: 500;
+    margin: 0;
+    line-height: size(21px);
+    padding: size(15px) size(10px) size(12px) size(25px);
+    border: none;
+    resize: vertical;
+
+    &::placeholder {
+      color: $color-nobel;
+    }
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    display: block;
+    width: size(11px);
+    height: size(11px);
+    right: 1px;
+    bottom: 1px;
+    clip-path: polygon(0% 0%, 100% 100%, 0% 100%);
+    transform: scaleX(-1);
+    background-color: $color-gainsboro;
+    z-index: 5;
+    pointer-events: none;
+  }
+}

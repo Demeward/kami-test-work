@@ -1,0 +1,31 @@
+// Vendor
+//---------------------------------
+
+@import "vendor/normalize";
+@import "vendor/swiper";
+
+// Global
+//---------------------------------
+
+@import "variables";
+@import "mixins";
+@import "global/fonts";
+@import "global/reboot";
+@import "global/utils";
+@import "global/container";
+
+// Blocks
+//---------------------------------
+
+@import "blocks/header";
+@import "blocks/main-nav";
+@import "blocks/contacts";
+@import "blocks/slider";
+@import "blocks/products";
+@import "blocks/footer";
+@import "blocks/modal";
+@import "blocks/input";
+@import "blocks/checkbox";
+@import "blocks/btn";
+@import "blocks/card";
+@import "blocks/overlay";

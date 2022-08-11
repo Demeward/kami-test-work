@@ -1,0 +1,195 @@
+.card {
+  transition: transform $trans-default, box-shadow $trans-default;
+  border-radius: 5px;
+
+  &:hover {
+    transform: translate(10px, -10px);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+
+    @include vp-767 {
+      transform: translate(5px, -5px);
+    }
+  }
+
+  & picture {
+    flex-shrink: 0;
+    flex-grow: 1;
+
+    @media (min-width: 1921px) {
+      flex-shrink: 1;
+    }
+
+    @include vp-1279 {
+      flex-shrink: 1;
+    }
+
+    @include vp-767 {
+      flex-grow: 1;
+    }
+  }
+
+  & img {
+    height: 100%;
+    min-height: size(174px);
+    object-fit: cover;
+    border-radius: 0 5px 5px 0;
+
+    @media (min-width: 1921px) {
+      width: 100%;
+    }
+
+    @include vp-1279 {
+      height: 290px;
+      width: 100%;
+      border-radius: 5px 5px 0 0;
+    }
+
+    @include vp-767 {
+      height: 100%;
+      min-height: 100px;
+      border-radius: 0 5px 5px 0;
+    }
+  }
+
+  &--big {
+    & img {
+      width: 100%;
+      max-height: 100%;
+      border-radius: 5px 5px 0 0;
+
+      @include vp-767 {
+        border-radius: 5px 5px 0 0;
+      }
+    }
+
+    & a {
+      flex-direction: column-reverse;
+      justify-content: flex-end;
+    }
+
+    & .card__type-wrp {
+      max-width: 100%;
+      padding-top: size(24px);
+      padding-bottom: size(28px);
+      border-radius: 0 0 5px 5px;
+
+      @include vp-767 {
+        padding-top: 14px;
+        padding-bottom: 14px;
+      }
+    }
+  }
+
+  @include vp-1279 {
+    width: calc(50% - 13.5px);
+    height: auto;
+
+    & .card__type-wrp {
+      padding-right: 20px;
+    }
+  }
+
+  @include vp-767 {
+    width: 100%;
+  }
+
+  &__link {
+    display: flex;
+    height: 100%;
+
+    @include vp-1279 {
+      flex-direction: column-reverse;
+    }
+
+    @include vp-767 {
+      flex-direction: row;
+    }
+  }
+
+  &__type-wrp {
+    display: inline-flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 69%;
+    font-size: size(28px);
+    font-weight: bold;
+    line-height: size(33px);
+    padding-left: size(35px);
+    padding-right: size(35px);
+    align-items: center;
+    color: $color-school-bus-yellow;
+    background-color: #100f0f;
+    border-radius: 5px 0 0 5px;
+
+    @include vp-1279 {
+      max-width: 100%;
+      padding-top: 24px;
+      padding-bottom: 28px;
+      padding-left: 20px;
+      padding-right: 20px;
+      height: 100%;
+      border-radius: 0 0 5px 5px;
+    }
+
+    @include vp-1023 {
+      padding-left: 15px;
+      padding-right: 15px;
+      font-size: 21px;
+      line-height: 26px;
+    }
+
+    @include vp-767 {
+      font-size: 18px;
+      line-height: 21px;
+      height: auto;
+      padding-top: 20px;
+      padding-bottom: 18px;
+      padding-left: 14px;
+      padding-right: 14px;
+      border-radius: 5px 0 0 5px;
+      max-width: 69%;
+    }
+
+    @media (max-width: 359px) {
+      font-size: 16px;
+      line-height: 19px;
+    }
+  }
+
+  &__type {
+    margin: 0;
+
+    & span {
+      color: $color-default-white;
+    }
+  }
+
+  &--2 .card__type-wrp {
+    padding-right: size(50px);
+
+    @include vp-767 {
+      padding-right: 29px;
+    }
+  }
+
+  &--3 .card__type-wrp {
+    padding-right: size(64px);
+
+    @include vp-767 {
+      padding-right: 34px;
+      flex-shrink: 0;
+    }
+  }
+
+  &--4 .card__type-wrp {
+    padding-right: size(43px);
+
+    @include vp-767 {
+      padding-right: 11px;
+    }
+  }
+
+  &--5 .card__type-wrp {
+    padding-right: size(39px);
+  }
+}

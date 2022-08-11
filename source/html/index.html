@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Katres - самые лучшие сушильные камеры">
+  <link rel="preload" href="fonts/roboto-regular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/roboto-regular.woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/roboto-bold.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/roboto-bold.woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/roboto-medium.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/roboto-medium.woff" as="font" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>Katres — Главная</title>
+</head>
+<body>
+
+  <div style="display: none;">
+    @@include("build/img/sprite_auto.svg")
+  </div>
+
+  <div class="wrapper">
+    <div class="overlay" data-overlay></div>
+    <header class="header">
+      <div class="container">
+        <div class="header__wrapper">
+          <a class="header__logo" aria-label="Главная страница Katres">
+            <picture>
+                  <source type="image/webp" srcset="img/content/katres-logo.webp, img/content/katres-logo@2x.webp 2x"><img src="img/content/katres-logo.png" srcset="img/content/katres-logo@2x.png 2x" width="308" height="50" alt="Логотип Katres">
+            </picture>
+          </a>
+
+          <nav class="header__nav main-nav" data-menu>
+            <button class="main-nav__toggle btn btn--round" type="button" aria-label="Переключатель отображения меню" data-toggle-menu>
+              <svg class="main-nav__open" width="31" height="31">
+                <use xlink:href="#icon-menu"></use>
+              </svg>
+              <svg class="main-nav__close" width="39" height="39">
+                <use xlink:href="#icon-close-menu"></use>
+              </svg>
+            </button>
+            <div class="main-nav__wrapper">
+              <ul class="main-nav__list">
+                <li class="main-nav__item">
+                  <a class="main-nav__link" href="#">О заводе</a>
+                </li>
+                <li class="main-nav__item">
+                  <a class="main-nav__link" href="#">Новости</a>
+                </li>
+                <li class="main-nav__item">
+                  <a class="main-nav__link" href="#">Сервис</a>
+                </li>
+                <li class="main-nav__item">
+                  <a class="main-nav__link" href="#">Лизинг</a>
+                </li>
+                <li class="main-nav__item">
+                  <a class="main-nav__link" href="#">Контакты</a>
+                </li>
+              </ul>
+              <ul class="main-nav__list main-nav__list--additional">
+                <li class="main-nav__item main-nav__item--products" data-products-menu>
+                  <a class="main-nav__link" href="#" data-toggle-products-menu>Продукция
+                    <svg width="12" height="7">
+                      <use xlink:href="#icon-arrow-down"></use>
+                    </svg>
+                  </a>
+                  <ul class="main-nav__products">
+                    <li class="main-nav__product"><a href="#" class="main-nav__product-link">Стандартные сушки</a></li>
+                    <li class="main-nav__product"><a href="#" class="main-nav__product-link">Ленточные сушки</a></li>
+                    <li class="main-nav__product"><a href="#" class="main-nav__product-link">Nordic Line</a></li>
+                    <li class="main-nav__product"><a href="#" class="main-nav__product-link">Высокотемпературные сушки</a></li>
+                    <li class="main-nav__product"><a href="#" class="main-nav__product-link">Туннельные сушки</a></li>
+                  </ul>
+                </li>
+                <li class="main-nav__item">
+                  <a class="main-nav__link" href="#">Реализованные проекты</a>
+                </li>
+                <li class="main-nav__item main-nav__item--callback">
+                  <a class="main-nav__link btn btn--grey" href="#" data-modal="callback">Заказать звонок</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+          <div class="header__contacts contacts">
+            <a href="mailto:info@katres.ru" class="contacts__info btn btn--round">
+              <svg width="31" height="31">
+                <use xlink:href="#icon-letter"></use>
+              </svg>
+              <span>info@katres.ru</span>
+            </a>
+            <a href="tel:+88006856944" class="contacts__info btn btn--round">
+              <svg width="31" height="31">
+                <use xlink:href="#icon-phone"></use>
+              </svg>
+              <span>8 800 685 69 44</span>
+            </a>
+            </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="intro">
+        <h1 class="visually-hidden">Самые лучшие сушильные камеры</h1>
+        <div class="intro__slider slider" data-slider>
+          <div class="slider__wrapper swiper-wrapper">
+            <div class="slider__item swiper-slide">
+              <div class="slider__content">
+                <picture>
+                  <source type="image/webp" srcset="img/content/standard.webp, img/content/standard@2x.webp 2x"><img src="img/content/standard.jpg" srcset="img/content/standard@2x.jpg 2x" width="1920" height="750" alt="фото">
+                </picture>
+                <h2 class="slider__title">Lorem ipsum dolor sit amet</h2>
+                <p>Phasellus id vehicula nulla, et hendrerit quam. Praesent sit amet eros dapibus, placerat ligula malesuada, venenatis ex</p>
+              </div>
+            </div>
+            <div class="slider__item swiper-slide">
+              <div class="slider__content">
+                <picture>
+                  <source type="image/webp" srcset="img/content/intro-slide.webp, img/content/intro-slide@2x.webp 2x"><img src="img/content/intro-slide.jpg" srcset="img/content/intro-slide@2x.jpg 2x" width="1920" height="750" alt="фото">
+                </picture>
+                <h2 class="slider__title">Самые лучшие сушильные камеры</h2>
+                <p>Самые лучшие сушильные камеры cамые лучшие сушильные камеры cамые лучшие сушильные камеры</p>
+              </div>
+            </div>
+            <div class="slider__item swiper-slide">
+              <div class="slider__content">
+                <picture>
+                  <source type="image/webp" srcset="img/content/nordic-line.webp, img/content/nordic-line@2x.webp 2x"><img src="img/content/nordic-line.jpg" srcset="img/content/nordic-line@2x.jpg 2x" width="1920" height="750" alt="фото">
+                </picture>
+                <h2 class="slider__title">In hac habitasse platea dictumst</h2>
+                <p>Nunc ut nulla nisl. In tristique magna vel turpis blandit, pharetra vehicula libero maximus.</p>
+              </div>
+            </div>
+            <div class="slider__item swiper-slide">
+              <div class="slider__content">
+                <picture>
+                  <source type="image/webp" srcset="img/content/belt.webp, img/content/belt@2x.webp 2x"><img src="img/content/belt.jpg" srcset="img/content/belt@2x.jpg 2x" width="1920" height="750" alt="фото">
+                </picture>
+                <h2 class="slider__title">Cras in sollicitudin tellus</h2>
+                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas</p>
+              </div>
+            </div>
+            <div class="slider__item swiper-slide">
+              <div class="slider__content">
+                <picture>
+                  <source type="image/webp" srcset="img/content/tunnel.webp, img/content/tunnel@2x.webp 2x"><img src="img/content/tunnel.jpg" srcset="img/content/tunnel@2x.jpg 2x" width="1920" height="750" alt="фото">
+                </picture>
+                <h2 class="slider__title">Curabitur placerat dui ante</h2>
+                <p>Nullam sodales condimentum sapien, vel mattis risus volutpat sit amet. Integer luctus augue id fermentum feugiat</p>
+              </div>
+            </div>
+          </div>
+          <button class="slider__control-btn slider__control-btn--prev" type="button" aria-label="Предыдущий слайд" data-btn-prev>
+            <svg width="19" height="37" aria-hidden="true">
+              <use xlink:href="#icon-arrow-left"></use>
+            </svg>
+          </button>
+          <button class="slider__control-btn slider__control-btn--next" type="button" aria-label="Следующий слайд" data-btn-next>
+            <svg width="19" height="37" aria-hidden="true">
+              <use xlink:href="#icon-arrow-right"></use>
+            </svg>
+          </button>
+          <div class="slider__pagination swiper-pagination"></div>
+        </div>
+      </section>
+      <section class="products">
+        <div class="container">
+          <h3 class="products__title">Продукция</h3>
+          <ul class="products__list">
+            <li class="products__card card card--big card--1"><a href="#" class="card__link" aria-label="Перейти в раздел 'Стандартные сушки'">
+                <div class="card__type-wrp">
+                  <p class="card__type">Стандартные <span>сушки</span></p>
+                </div>
+                <picture>
+                  <source type="image/webp" srcset="img/content/standard.webp, img/content/standard@2x.webp 2x"><img src="img/content/standard.jpg" srcset="img/content/standard@2x.jpg 2x" width="507" height="301" alt="фото">
+                </picture>
+              </a></li>
+            <li class="products__card card card--2"><a href="#" class="card__link" aria-label="Перейти в раздел 'Ленточные сушки'">
+              <div class="card__type-wrp">
+                <p class="card__type">Ленточные <span>сушки</span></p>
+              </div>
+                <picture>
+                  <source type="image/webp" srcset="img/content/belt.webp, img/content/belt@2x.webp 2x"><img src="img/content/belt.jpg" srcset="img/content/belt@2x.jpg 2x" width="328" height="174" alt="фото">
+                </picture>
+              </a></li>
+            <li class="products__card card card--3"><a href="#" class="card__link" aria-label="Перейти в раздел 'Сушки Nordic Line'">
+              <div class="card__type-wrp">
+                <p class="card__type">Nordic Line</p>
+              </div>
+                <picture>
+                  <source type="image/webp" srcset="img/content/nordic-line.webp, img/content/nordic-line@2x.webp 2x"><img src="img/content/nordic-line.jpg" srcset="img/content/nordic-line@2x.jpg 2x" width="327" height="174" alt="фото">
+                </picture>
+              </a></li>
+            <li class="products__card card card--4"><a href="#" class="card__link" aria-label="Перейти в раздел 'Высокотемпературные сушки'">
+              <div class="card__type-wrp">
+                <p class="card__type">Высокотемпературные <span>сушки</span></p>
+              </div>
+                <picture>
+                  <source type="image/webp" srcset="img/content/high-temp.webp, img/content/high-temp@2x.webp 2x"><img src="img/content/high-temp.jpg" srcset="img/content/high-temp@2x.jpg 2x" width="180" height="174" alt="фото">
+                </picture>
+              </a></li>
+            <li class="products__card card card--5"><a href="#" class="card__link" aria-label="Перейти в раздел 'Туннельные сушки'">
+              <div class="card__type-wrp">
+                <p class="card__type">Туннельные <span>сушки</span></p>
+              </div>
+                <picture>
+                  <source type="image/webp" srcset="img/content/tunnel.webp, img/content/tunnel@2x.webp 2x"><img src="img/content/tunnel.jpg" srcset="img/content/tunnel@2x.jpg 2x" width="331" height="174" alt="фото">
+                </picture>
+              </a></li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <div class="modal modal--preload modal--callback">
+      <div class="modal__wrapper">
+        <div class="modal__overlay"></div>
+        <div class="modal__content">
+
+          <h2 class="modal__title">Заказать звонок</h2>
+          <form method="post">
+            <label class="input"><input type="text" name="name" placeholder="Ваше имя*" required></label>
+            <label class="input"><input type="tel" name="phone" placeholder="Телефон*" pattern="^\+7\s?\(\d{3}\)\s?\d{3}(-\d{2}){2}$" title="+7 (XXX) XXX-XX-XX" required></label>
+            <label class="textarea"><textarea name="message" placeholder="Введите сообщение..."></textarea></label>
+            <div class="label-wrp">
+              <input class="visually-hidden" type="checkbox" name="agreed" id="agreement" required>
+              <label class="checkbox" for="agreement">Согласен на обработку <a href="#">персональных данных</a>
+              </label>
+            </div>
+            <button type="submit" class="modal__submit btn btn--big btn--yellow"><span>Отправить</span><span>Задать вопрос</span></button>
+          </form>
+
+          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап">
+            <svg width="15" height="15">
+              <use xlink:href="#icon-close"></use>
+            </svg>
+          </button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/vendor.min.js"></script>
+  <script src="js/main.min.js"></script>
+</body>
+</html>

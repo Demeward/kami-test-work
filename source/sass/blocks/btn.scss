@@ -1,0 +1,68 @@
+.btn {
+  border-style: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color $trans-default, color $trans-default;
+
+  &--big {
+    width: size(209px);
+    font-size: size(18px);
+    font-weight: bold;
+    line-height: size(23px);
+    padding: size(14px) size(59px) size(13px) size(59px);
+
+    @include vp-767 {
+      width: calc(100% + 33px);
+      margin-left: -17px;
+      padding-top: 23px;
+      padding-bottom: 26px;
+      border-radius: 0 0 14px 14px;
+    }
+  }
+
+  &--yellow {
+    background-color: $color-school-bus-yellow;
+
+    &:hover {
+      background-color: $color-paris-daisy;
+    }
+
+    &:active {
+      transition: none;
+      background-color: $color-tangerine-yellow;
+    }
+  }
+
+  &--grey {
+    &::before {
+      background-color: $color-whisper;
+    }
+
+    &:hover {
+      &::before {
+        background-color: $color-whisper-light;
+      }
+    }
+
+    &:active {
+      &::before {
+        transition: none;
+        background-color: $color-gainsboro;
+      }
+    }
+  }
+
+  &--round {
+    color: $color-school-bus-yellow;
+    border-radius: none;
+
+    &:hover {
+      color: $color-paris-daisy;
+    }
+
+    &:active {
+      color: $color-tangerine-yellow;
+    }
+  }
+}

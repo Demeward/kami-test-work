@@ -1,0 +1,52 @@
+@mixin retina {
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    @content;
+  }
+}
+
+@mixin has-hover {
+  @media (hover: hover), screen and (min-width: 0\0) {
+    &:hover:not(.focus-visible),
+    &.focus-visible:focus {
+      @content;
+    }
+  }
+}
+
+@mixin vp-1919 {
+  @media (max-width: $vp-1920 - 1) {
+    @content;
+  }
+}
+
+@mixin vp-1439 {
+  @media (max-width: $vp-1440 - 1) {
+    @content;
+  }
+}
+
+@mixin vp-1279 {
+  @media (max-width: $vp-1280 - 1) {
+    @content;
+  }
+}
+
+@mixin vp-1023 {
+  @media (max-width: $vp-1024 - 1) {
+    @content;
+  }
+}
+
+@mixin vp-767 {
+  @media (max-width: $vp-768 - 1) {
+    @content;
+  }
+}
+
+@function size($size-in-px) {
+    @return $size-in-px / $fz-default * 1rem;
+}
+
+@function size-desktop($size-in-px) {
+  @return $size-in-px / $vp-1920 * 100vw;
+}
